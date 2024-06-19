@@ -54,6 +54,10 @@ Follow these steps to get the application up and running:
 
 2. Open your browser and navigate to `http://localhost:3000`.
 
+### Deployment
+
+The application is deployed on Vercel. You can access it at [cali-currency-converter.vercel.app](https://cali-currency-converter.vercel.app/).
+
 ## Usage
 
 - **CurrencyConverter Component**: The main component that handles currency conversion logic.
