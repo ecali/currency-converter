@@ -1,4 +1,6 @@
-export const currencies = [
+import {CurrencyModel} from "../models/Currency.model";
+
+export const currencies: CurrencyModel[] = [
     { code: "EUR", name: "Euro" },
     { code: "USD", name: "US Dollar" },
     { code: "JPY", name: "Japanese Yen" },
