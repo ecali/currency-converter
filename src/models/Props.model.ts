@@ -1,5 +1,6 @@
 export interface PropsCurrencySelector {
     currency: string,
     setCurrency: (arg0: string) => void,
-    label: string
+    label: string,
+    disabled: boolean
 }

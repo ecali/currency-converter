@@ -4,7 +4,7 @@ import {PropsCurrencySelector} from "../models/Props.model";
 
 export const CurrencySelect = (props: PropsCurrencySelector) => {
     return(
-        <FormControl fullWidth>
+        <FormControl fullWidth disabled={props.disabled}>
             <InputLabel id="demo-simple-select-label">{props.label}</InputLabel>
             <Select
                 labelId={props.label.toLowerCase().replaceAll(' ', '-')}
