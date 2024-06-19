@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Currency Converter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple currency converter application built with React, TypeScript, Tailwind CSS, Material-UI, Axios, and the [freecurrencyapi.com](https://freecurrencyapi.com) API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Convert between various currencies using live exchange rates.
+- User-friendly interface built with Material-UI.
+- Responsive design with Tailwind CSS.
+- TypeScript for type safety.
+- Fetches live data using Axios.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Before you begin, ensure you have met the following requirements:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- You have installed Node.js and npm.
+- You have a free API key from [freecurrencyapi.com](https://freecurrencyapi.com).
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these steps to get the application up and running:
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    git clone https://github.com/ecali/currency-converter.git
+    cd currency-converter
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
 
-### `npm run eject`
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. **Set up your API key**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   Create a `.env` file in the root directory of the project and add your `FREECURRENCYAPI_KEY`:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    ```env
+    REACT_APP_API_KEY=your_api_key_here
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Running the Application
 
-## Learn More
+1. **Start the development server**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm run start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+- **CurrencyConverter Component**: The main component that handles currency conversion logic.
+- **CurrencyInput Component**: A reusable input component for selecting currencies and entering amounts.
+- **API Service**: Handles all API requests to [freecurrencyapi.com](https://freecurrencyapi.com).
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom user interfaces.
+- **Material-UI**: A popular React UI framework with pre-designed components.
+- **Axios**: A promise-based HTTP client for the browser and Node.js.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [freecurrencyapi.com](https://freecurrencyapi.com) for providing the free currency conversion API.
+- The open-source community for providing the libraries and tools used in this project.
